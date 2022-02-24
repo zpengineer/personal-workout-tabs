@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Персональная тренировка</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,10 +12,437 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <main class="main-container">
+    <div class="tabs">
+      <div class="controls" data-controls>
+        <a href="#monday" class="controls__item">Понедельник</a>
+        <a href="#wednesday" class="controls__item">Среда</a>
+        <a href="#friday" class="controls__item">Пятница</a>
+      </div>
+    
+      <div class="panes" data-panes>
+
+        <div class="pane" id="monday">
+          <h2 class="pane-title">Понедельник</h2>
+          <h3 class="pane-subtitle">Базовая тренировка на все тело</h3>
+          <h4 class="pane-rest">Отдых между подходами 1.5 минуты, отдых между упражнениями 3 минуты</h4>
+          <ul class="pane-list">
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Кардио. Велотренажер или беговая дорожка
+                  </p>
+                </div>
+                <div class="pane-item__sets">15 мин</div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Разминка
+                  </p>
+                </div>
+                <div class="pane-item__sets"></div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Становая тяга
+                  </p>
+                </div>
+                <div class="pane-item__sets">4</div>
+                <div class="pane-item__reps">6-8</div>
+              </div>
+
+              <div class="pane-accordion">
+                <img src="../src/images/monday/first.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Жим ногами
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">10-12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/second.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Тяга верхнего блока
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/third.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Жим гантелей на наклонной скамье
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/fourth.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Тяга нижнего блока к поясу сидя узким хватом
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/fifth.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Разгибание ног в тренажере
+                  </p>
+                </div>
+                <div class="pane-item__sets">2</div>
+                <div class="pane-item__reps">15</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/sixth.gif" alt="">
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Ягодичный мостик
+                  </p>
+                </div>
+                <div class="pane-item__sets">2</div>
+                <div class="pane-item__reps">15</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/seventh.gif" alt="">
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+    
+        <div class="pane" id="wednesday">
+          <h2 class="pane-title">Среда</h2>
+          <h3 class="pane-subtitle">Базовая тренировка на все тело</h3>
+          <h4 class="pane-rest">Отдых между подходами 1.5 минуты, отдых между упражнениями 3 минуты</h4>
+          <ul class="pane-list">
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Кардио. Велотренажер или беговая дорожка
+                  </p>
+                </div>
+                <div class="pane-item__sets">15 мин</div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Разминка
+                  </p>
+                </div>
+                <div class="pane-item__sets"></div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Приседания со штангой или с гантелей
+                  </p>
+                </div>
+                <div class="pane-item__sets">4</div>
+                <div class="pane-item__reps">6-8</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/first.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Сгибание ног в тренажере
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">10-12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/second.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Тяга штанги в наклоне
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">6-8</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/third.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Отжимания от скамьи
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/fourth.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Тяга нижнего блока к поясу сидя узким хватом
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/fifth.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Выпады гантелями
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-10</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/sixth.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Махи ногой назад в партере
+                  </p>
+                </div>
+                <div class="pane-item__sets">2</div>
+                <div class="pane-item__reps">30</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/seventh.gif" alt="">
+              </div>
+            </li>
+          
+          </ul>
+        </div>
+    
+        <div class="pane" id="friday">
+          <h2 class="pane-title">Пятница</h2>
+          <h3 class="pane-subtitle">Базовая тренировка на все тело</h3>
+          <h4 class="pane-rest">Отдых между подходами 1.5 минуты, отдых между упражнениями 3 минуты</h4>
+          <ul class="pane-list">
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Кардио. Велотренажер или беговая дорожка
+                  </p>
+                </div>
+                <div class="pane-item__sets">15 мин</div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Разминка
+                  </p>
+                </div>
+                <div class="pane-item__sets"></div>
+                <div class="pane-item__reps"></div>
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Выпады с гантелями
+                  </p>
+                </div>
+                <div class="pane-item__sets">4</div>
+                <div class="pane-item__reps">6-8</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/friday/first.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Приседания «Плие» с гантелей
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">10-15</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/wednesday/first.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Тяга вертикального блока
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">8-12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/monday/third.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Жим гантелей сидя (Жим Арнольда)
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">6-8</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/friday/second.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Отжимания от пола (лавочки)
+                  </p>
+                </div>
+                <div class="pane-item__sets">3</div>
+                <div class="pane-item__reps">10-12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/friday/third.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Подъем гантелей на бицепс
+                  </p>
+                </div>
+                <div class="pane-item__sets">2</div>
+                <div class="pane-item__reps">12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/friday/fourth.gif" alt="">
+              </div>
+            </li>
+          
+            <li class="pane-item">
+              <div class="pane-item__wrapper">
+                <div class="pane-item__text">
+                  <p>
+                    Разгибание на трицепс в верхнем блоке
+                  </p>
+                </div>
+                <div class="pane-item__sets">2</div>
+                <div class="pane-item__reps">12</div>
+              </div>
+              <div class="pane-accordion">
+                <img src="../src/images/friday/fifth.gif" alt="">
+              </div>
+            </li>
+          
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+    </main>
+
+
     <script src="./index.js"></script>
   </body>
 </html>
